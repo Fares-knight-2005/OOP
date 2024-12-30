@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
 
 
 public class clsMainMenu {
@@ -12,6 +12,18 @@ public class clsMainMenu {
 
     private static void GenrateMAinMenu(enWhatToDo WhatToDo)
     {
+        ArrayList <String> Subjects = new ArrayList<String>();
+
+        Subjects.add("Math");
+        Subjects.add("Since");
+
+        ArrayList <clsTeacher> AllTeachers = new ArrayList<clsTeacher>();
+
+        clsTeacher Teacher = new clsTeacher("Mostafa" , Subjects , 44 , 2000 , Subjects , "0981883592");
+
+        AllTeachers.add(Teacher);
+
+        clsImportantFunctions.ClearScreen();
        
         switch (WhatToDo)
         {
@@ -52,8 +64,11 @@ public class clsMainMenu {
             break;
 
             case enFindTeacher:
-            System.out.println("Will Be Here Nearly\n");
-            System.out.println("press Any Key To Go Back To Main Menu ....");
+            //System.out.println("Will Be Here Nearly\n");
+
+            clsFindTeacherCard.FindTeacherCard(AllTeachers);
+
+            System.out.println("press Enter To Go Back To Main Menu ....");
             input.nextLine(); input.nextLine();
             MAinMenu();
             break;
@@ -109,7 +124,9 @@ public class clsMainMenu {
 
     public static void MAinMenu()
     {
-        clsScreen.NewMenu("\t     Main Menu" , "  ");
+        clsImportantFunctions.ClearScreen();
+
+        clsScreen.NewMenu("\t\t      Main Menu" , " \t\t\t\t\t\t ");
 
         System.out.println("===================================");
         System.out.println("         Choose What To Do         ");
