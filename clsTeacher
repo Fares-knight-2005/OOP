@@ -10,7 +10,7 @@ public class clsTeacher {
     private ArrayList<String> currentcourses= new ArrayList<>(5);
 private String  phonenumber;
   
-
+public clsTeacher(){}
 
 public clsTeacher(String name, ArrayList<String> subject, int age, int salary, ArrayList<String> currentcourses,
         String phonenumber) {
@@ -22,23 +22,21 @@ public clsTeacher(String name, ArrayList<String> subject, int age, int salary, A
     this.phonenumber = phonenumber;
 }
 
-public void enAddToTeacherCourse(String teachername, String courseName ,ArrayList courses){
+public void enAddToTeacherCourse(String courseName){
 currentcourses.add(courseName);
 return;
 }
 
-public static  String  findTeacher(String teacherName,String[] Teacherarray ) {
-    String no="not found";
+public static  bolean  findTeacher(String teacherName,String[] Teacherarray ) {
+    bolean Found = false;
    for (String Teacher : Teacherarray) {
 
-if (Teacher.equalsIgnoreCase(teacherName)){
-return Teacher.ShowTeachers();
+       if (Teacher.equalsIgnoreCase(teacherName)){
+           return true;
+       }
    }
-   else {
-    
-   
-   }
-return no; }
+
+   return false; 
 }
 
 public String getName() {
@@ -88,24 +86,3 @@ public String getPhonenumber() {
 public void setPhonenumber(String phonenumber) {
     this.phonenumber = phonenumber;
 }
-
-public void showTeacher() {
-    System.out.println("clsTeacher{name=" + name + 
-                       ", Subject=" + Subject + 
-                       ", age=" + age + 
-                       ", salary=" + String.format("%.2f", salary) + 
-                       ", currentcourses=" + currentcourses + 
-                       ", phonenumber=" + phonenumber + "}");
-}
-
-
-
-
- 
-
- 
-    
-}
-    
-    
-
