@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+
+// Find Screen
+
 public class clsFindTeacherCard {
 
     static Scanner input = new Scanner(System.in);
@@ -19,7 +22,6 @@ public class clsFindTeacherCard {
             System.out.println();
             System.out.println("Couldn't Find Teacher :( ");
         }
-
         else if(Teacher.isEmpty(Teacher))
         {
             System.out.println();
@@ -46,10 +48,9 @@ public class clsFindTeacherCard {
             }
 
             System.out.println("=================================");
-
-
         }
 
         input.nextLine();
     }
 }
+//f

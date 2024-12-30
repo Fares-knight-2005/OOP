@@ -1,6 +1,6 @@
 
 
-
+// Usfull Fun
 public class clsImportantFunctions {
 
     public static void ClearScreen()
@@ -11,6 +11,5 @@ public class clsImportantFunctions {
         }
     }
 
-
-
 }
+//f

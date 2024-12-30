@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+//The Main Menu That Main Call
+
 
 public class clsMainMenu {
 
@@ -27,7 +29,6 @@ public class clsMainMenu {
        
         switch (WhatToDo)
         {
-        
             case enShowCourses:
             System.out.println("chow courses Will Be Here Nearly\n");
             System.out.println("press Any Key To Go Back To Main Menu ....");
@@ -160,3 +161,4 @@ public class clsMainMenu {
         GenrateMAinMenu(enWhatToDo.values()[ToDo - 1]);
     }
 }
+//f

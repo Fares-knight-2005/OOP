@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import javax.sound.sampled.SourceDataLine;
 
 public class clsTeacher {
     private String name;
@@ -21,7 +19,6 @@ public clsTeacher(String name, ArrayList<String> subject, int age, int salary, A
     this.currentcourses = currentcourses;
     this.phonenumber = phonenumber;
 }
-
 public void enAddToTeacherCourse(String courseName){
 currentcourses.add(courseName);
 return;
@@ -100,5 +97,5 @@ public String getPhonenumber() {
 public void setPhonenumber(String phonenumber) {
     this.phonenumber = phonenumber;
 }
-
+//f
 }
